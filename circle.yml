@@ -19,8 +19,8 @@ deployment:
   production:
     branch: master
     commands:
-      - git config --global user.name "$USERNAME"
-      - git config --global user.email "$EMAIL"
+      - git config --global user.name $USERNAME
+      - git config --global user.email $EMAIL
       - npm run build
       - |
         cat <<EOF > ./_book/circle.yml
