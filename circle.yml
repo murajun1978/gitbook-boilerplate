@@ -1,0 +1,24 @@
+general:
+  branches:
+    only:
+      - master
+
+machine:
+  node:
+    version: 6.2.2
+
+test:
+  override:
+    - exit 0
+
+dependencies:
+  override:
+    - npm install
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - git config --global user.name [username]
+      - git config --global user.email [email]
+      - npm run deploy
