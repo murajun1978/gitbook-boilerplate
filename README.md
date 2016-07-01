@@ -24,3 +24,13 @@ $ npm run build
 ```
 $ npm run publish
 ```
+
+## Set two environment variables in CircleCI
+
+```
+name: USERNAME
+value: [username]
+
+name: EMAIL
+value: [email]
+```
